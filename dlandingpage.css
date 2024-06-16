@@ -312,15 +312,28 @@ margin-inline: auto;
 width: 100%;
 margin-top: auto;
 margin-bottom: 195px;
+/*
 animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0% cover 40%;
+*/
+scale: .8;
+opacity: 0;
+animation: fade linear forwards;
+animation-timeline: view();
+animation-range: 250px 400px;
+}
+@keyframes fade {
+to {scale: 1;
+    opacity: 1;
+   }
 }
 .what-we-offer p {
 max-width: 45ch;
 line-height: 22px;
 margin-top: 7px;
 }
+/*
 @keyframes appear {
     from{
         opacity: 0;
@@ -331,7 +344,7 @@ margin-top: 7px;
         transform: translateX(0px);
     }
 }
-
+*/
 .demo {
 height: 250px;
 width: 300px;
@@ -581,7 +594,7 @@ right: 36px;
     .what-we-offer {
         gap: 18px;
         margin-bottom: 80px;
-        animation-range: entry 0% cover 40%;
+       /* animation-range: entry 0% cover 40%;*/
         text-align: center;
     }
     .part2 {
