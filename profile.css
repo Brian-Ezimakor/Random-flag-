@@ -1,0 +1,216 @@
+.exitArrow {
+padding-top: auto;
+padding-bottom: auto;
+color: var(--color--p);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+header {
+padding-left: -500px;
+}
+
+.intro {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding-left: 20px;
+}
+
+.profile {
+color: var(--color--p);
+font-weight: bolder;
+text-shadow: 1px 2px 0px #6e40c9;
+font-family: Poppins, sans-serif;
+color: white;
+font-size: 20px;
+}
+
+.leftpad {
+padding-left: 12px;
+}
+
+.assets {
+margin-top: 65px;
+padding: 0px 20px;
+}
+
+.assets {
+margin-top: 65px;
+padding: 0px 20px;
+}
+
+
+.assets p span:not(:last-of-type) {
+display: none;
+}
+
+.assets p span {
+color: #868686;
+}
+
+.assets div {
+margin-bottom: 24px;
+}
+
+.welcome-heading2 {
+margin-top: 75px;
+margin-bottom: 20px;
+font-size: 25px;
+}
+
+.space {
+cursor: pointer;
+}
+
+.Colorlink {
+color: var(--color--p);
+}
+
+#leave {
+display: none; 
+}
+
+.logoutquest {
+margin: auto;
+background-color: #0000008e;
+height: 100%;
+width: 100%;
+z-index: 500;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+padding: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.4s;
+scale: 0.7;
+}
+
+.logoutquest .answer {
+height: auto;
+background-color: rgb(255, 255, 255);
+position: relative;
+padding: 1.2rem;
+text-align: center;
+border-radius: 16px;
+box-shadow: var(--box-shadow);
+}
+
+.h3 {
+color: black;
+padding-bottom: 20px;
+}
+
+.logoutquest button {
+border: none;
+border-radius: 5px;
+padding: 10px;
+color: white;
+background-color: #6e40c9;
+cursor: pointer;
+}
+
+.logoutquest div:not(:first-child) {
+display: flex;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+
+#leave2 {
+display: none; 
+}
+
+.logoutquest2 {
+margin: auto;
+background-color: #0000008e;
+height: 100%;
+width: 100%;
+z-index: 500;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+padding: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.4s;
+scale: 0.7;
+}
+
+.logoutquest2 .answer2, .logoutquest3 .answer3 {
+height: auto;
+background-color: rgb(255, 255, 255);
+position: relative;
+padding: 1.2rem;
+text-align: center;
+border-radius: 16px;
+box-shadow: var(--box-shadow);
+}
+
+.h3 {
+color: black;
+padding-bottom: 20px;
+}
+
+.logoutquest2 button {
+border: none;
+border-radius: 5px;
+padding: 10px;
+color: white;
+background-color: #6e40c9;
+cursor: pointer;
+}
+
+.logoutquest2 div:not(:first-child) {
+display: flex;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+table {
+width: 100%;
+row-gap: 50px;
+}
+
+tr {
+height: 50px;
+}
+
+tr td:nth-child(3) {
+text-align: right;
+}
+
+tr td:nth-child(2) {
+text-align: center;
+}
+
+.logoutquest3 {
+margin: auto;
+background-color: transparent;
+backdrop-filter: blur(7px);
+height: 100%;
+width: 100%;
+z-index: 500;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+padding: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_parent">
+<meta charset="UTF-8">
+<meta name="author" content="Brian Ezimakor">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Random Flag | Sign up</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="auth.css"> 
+<link rel="icon" href="1717107968300logo.png.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<base target="_parent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2ec882c8ad.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<script src="random.js"></script>
+<script src="auth.js"></script>
+
+</head>
+
+<body><!--button placeholder socials field-bottom-->
+
+<section class="flexbox">   
+    <section class="container">
+
+        <img src="IMG_20240620_001204-removebg-preview.png" class="logo">
+
+        <!-- <h1>SIGN UP</h1> -->
+        <p class="head">Welcome, fill form to begin!</p>
+        
+        <p id="tell"></p>
+
+        <br>
+    
+        <form onsubmit="return false">
+        <label for="fname">User-name</label>
+        <input type="text" id="uname" name="uname" placeholder="Nickname" autofocus required><br>
+        
+        <label for="email">Email-address</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required><br>
+        
+        <label for="quantity">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" minlength="8" required>
+        <p class="password">
+            <!-- <a href="work out" target="_parent">Forgot password?</a>  -->
+        <span>At least 8 characters</span></p>
+
+        <button onclick="signUp()">Sign up</button>
+
+        <p>or</p><br>
+
+        <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a><br>
+        <a href="#"><i class="fab fa-instagram"></i></a><br>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div><br>
+        <p>Already have an account? <span><a href="auth2.html">Log in</a></span></p>
+        </form>
+    
+    </section>
+</section>
+
+</body>
+</html>

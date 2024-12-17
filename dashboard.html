@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_parent" data-theme="light">
+<meta charset="UTF-8">
+<meta name="author" content="Brian Ezimakor">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Random Flag | Dashboard</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="dashboard.css"> 
+<link rel="icon" href="1717107968300logo.png.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<base target="_parent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2ec882c8ad.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<script src="dashboard.js"></script>
+<script src="auth.js"></script>
+<script src="links.js"></script>
+
+</head>
+
+<body class="body fullbody">
+
+<section class="sideNav">
+    <div class="color btmIcon white sideIcon" onclick="dashboard()"><i class="fa-solid fa-home"></i> <p>Home</p></div>
+    <div class="color btmIcon sideIcon" onclick="profile()"><i class="fa-solid fa-user"></i> <p>Profile</p></div>
+    <div class="color btmIcon sideIcon" onclick="leaderboard()"><i class="fa-solid fa-trophy"></i> <p>Leaderboard</p></div>
+    <div class="color btmIcon sideIcon" onclick="gameinfo()"><i class="fa-solid fa-gamepad"></i> <p>Gameinfo</p></div>
+    <div class="color btmIcon sideIcon logout1" onclick="logOut()"><i class="fa-solid fa-right-from-bracket logout"></i> <p class="danger">Logout</p></div>
+</section>
+
+<section  class="fullpage">
+<header>
+    <nav class="intro">
+    <img src="new1717107968300logo.png" alt="logo" class="png">
+    <p class="name">Random <span class="flag">Flag</span></p>
+    </nav>
+
+    <nav class="signups">
+        <button class="material-icons theme" type="button" data-theme-toggle aria-label="change to light theme">
+        </button>
+    </nav>
+
+</header>
+
+
+<div class="level" id="levels">
+    <p>Beginner&#128640;</p>
+    <p>Intermediate&#129353;</p>
+    <p>Advanced&#129352;</p>
+    <p>Veteran&#129351;</p>
+    <p>Professional&#127942;</p>
+</div>
+
+<section class="first-greetings">
+<h1 class="welcome-heading">Welcome to your <span>Dashboard!</span></h1>
+<div class="levels"></div>
+</section>
+
+<section class="adaptivesections">
+<section class="cover">
+    <div class="profile">
+    <img src="downloadp.jpg" class="image">
+    <div class="pencil">
+        <div class="centerPencil">
+        <i class="material-icons icon">add_a_photo</i>
+        <input type="file" id="image" class="upload" onchange="upload()" onclick="upload()" accept="image/*">
+        </div>
+    </div>
+    </div>
+    <div class="stats">
+        <p id="name"></p>
+        <p id="level"></p>
+        <span class="noS" title="20&#11088; = 1&#128681;">
+        <p class="object border"><span id="points"></span>&#11088;</p>
+        <p class="object"><span id="flag"></span>&#128681;</p>
+        </span>
+    </div>
+</section>
+
+<!-- <br><br> -->
+<div class="tasks">
+<section class="cover1 first" onclick="startQuiz()">
+
+<span><i class="material-icons color">quiz</i>
+</span> 
+
+<div>
+<h3>Take a quiz</h3>
+<p>Take a quiz to win points...</p>
+</div>
+
+</section>
+
+<section class="cover1 second"  onclick="alertUser()">
+
+<span><i class="material-icons color">dynamic_form</i>
+</span> 
+
+<div>
+<h3>Explore Our Classes</h3>
+<p>Host your own questions today...</p>
+</div>
+
+</section>
+
+</div>
+</section>
+
+<section class="displaytoggler">
+<div class="popupdiv">
+    <div class="popup">
+        <!-- <img src="istockphoto-1310263912-612x612-removebg-preview.png"> -->
+         <!-- <video width="auto" height="200" autoplay loop controls="0">
+        <source src="Welcome Page.mp4" type="video/mp4">
+         </video> -->
+        <img src="Quality Check (1).png">
+        <h3>Welcome onboard <span class="at">@</span><span class="erandom at" id="user"></span></h3>
+        <p class="firstp">Have fun from answering & asking questions. For the start we have given you 3<span class="star">&#11088;</span>(points).</p>
+
+        <p class="div"><span style="color :#6e40c9">Hints</span>: Earn Pts & Flags on every correct answer.<br>20&#11088; = 1&#128681;</p>
+        <div class="x" title="close">X</div>
+    </div>
+</div>
+</section>
+
+<section class="extraClass">
+<section class="bottomNav">
+    <div class="color btmIcon white" onclick="dashboard()"><i class="fa-solid fa-home"></i> <p>Home</p></div>
+    <div class="color btmIcon" onclick="profile()"><i class="fa-solid fa-user"></i> <p>Profile</p></div>
+    <div class="color btmIcon" onclick="leaderboard()"><i class="fa-solid fa-trophy"></i> <p>Leaderboard</p></div>
+    <div class="color btmIcon" onclick="gameinfo()"><i class="fa-solid fa-gamepad"></i> <p>Gameinfo</p></div>
+</section>
+</section>
+
+<footer class="body">
+<div class="about">
+
+    <div class="thetalk">
+        <img src="IMG_20240620_001204-removebg-preview.png" class="logo">
+        <p class="summary">Random flag is here to help. We take answering
+         questions to a different level online, it's fun, collabortive,
+         knowlegdable and fantastic.</p><br>
+         <a onclick="startQuiz()"  class="select">Take a quiz</a> 
+    </div>
+
+   <div class="rights">
+    <p class="copyright">&copy; 2024 Random <span class="flag">flag</span> from subdue.com</p>
+    <!-- <p class="copyright inc">From Sub-Due Inc.<span class="startup"> -->
+        <!-- <img src="IMG-20240526-WA0007-removebg-preview.png" class="orbit"> -->
+    </span></p>
+   </div><br><br>
+
+</div>
+
+</footer>
+</section>
+
+<section id="leave">
+<section class="logoutquest" id="leaveChild">
+    <div class="answer">
+        <h3 class="h3">Are you sure you want to Logout?</h3>
+        <div>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+        </div>
+    </div>
+</section>
+</section>
+
+
+</body>
+</html>

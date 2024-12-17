@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_parent" data-theme="light">
+<meta charset="UTF-8">
+<meta name="author" content="Brian Ezimakor">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Random Flag | Trivia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="profile.css">
+<link rel="icon" href="1717107968300logo.png.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<base target="_parent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2ec882c8ad.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<script src="trivia.js"></script>
+<script src="theme.js"></script>
+<script src="links.js"></script>
+
+</head>
+
+<body class="body">
+
+<header style="width: 100%;">
+    <nav class="intro">
+        <p class="exitArrow" onclick="dashboard()">
+        <i class="fa-solid fa-chevron-left left"></i></p>    
+    <p class="profile leftpad">Quiz </p>
+    </nav>
+
+    <nav class="signups">
+        <button class="material-icons theme" type="button" data-theme-toggle aria-label="change to light theme">
+        </button>
+    </nav>
+
+</header>
+
+
+<section class="select-quiz" id="select-quiz">
+    <h2>Select a topic of your choice.</h2><br>
+    <div id="test"></div>
+    <div id="categoryHolder">
+    <form id="category">
+    </form>
+   </div>
+</section>
+
+
+
+<section class="cover-quiz hide" id="quiz-section">
+<div class="counts">
+    <div class="question-count" id="question-count">
+    </div>
+    <div class="time-count">
+        <span class="time-left" id="time-left"></span>
+        <i class="material-icons time">alarm</i>
+    </div>
+</div>
+    <h1 id="heading"></h1>
+
+    <div class="flex" id="answers">
+    </div>
+
+    <button id="next-btn">Next</button> 
+</section>
+
+
+<section class="endScreen hide" id="endScreen">
+    <img src="" class="imgChange" id="image">
+    <div id="user-score"></div><br>
+    <div id="encourage"></div>
+    <div class="action-to-take">
+    <button id="restart">Play again</button>
+    <button id="newQuiz" onclick="newQuiz()">Select new topic</button>
+    <button id="home" class="fa-solid fa-home" onclick="dashboard()"></button>
+    <br>
+    <!-- <p id="teller"></p> -->
+    </div>
+</section>
+
+<section class="flagAchievment">
+
+    <div class="xFlag" title="close">X</div>
+
+    <div class="holdFlag">
+    <img src="red-flag.gif">
+    <h2>Congratulations, you earned a flag</h2>
+    <p>Flags are very important here.</p>
+    <p>Hint: Every 20&#11088; = 1&#128681;</p>
+    </div>
+
+</section>
+<!-- <section>
+    
+</section> -->
+
+</body>
+</html>

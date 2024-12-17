@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_parent" data-theme="light">
+<meta charset="UTF-8">
+<meta name="author" content="Brian Ezimakor">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Random Flag | Gameinfo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="profile.css"> 
+<link rel="icon" href="1717107968300logo.png.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<base target="_parent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2ec882c8ad.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<script src="theme.js"></script>
+<script src="auth.js"></script>
+<script src="links.js"></script>
+
+</head>
+
+<body class="body">
+
+    <section class="sideNav">
+        <div class="color btmIcon sideIcon" onclick="dashboard()"><i class="fa-solid fa-home"></i> <p>Home</p></div>
+        <div class="color btmIcon sideIcon" onclick="profile()"><i class="fa-solid fa-user"></i> <p>Profile</p></div>
+        <div class="color btmIcon sideIcon" onclick="leaderboard()"><i class="fa-solid fa-trophy"></i> <p>Leaderboard</p></div>
+        <div class="color btmIcon white sideIcon" onclick="gameinfo()"><i class="fa-solid fa-gamepad"></i> <p>Gameinfo</p></div>
+        <div class="color btmIcon sideIcon logout1" onclick="logOut()"><i class="fa-solid fa-right-from-bracket logout"></i> <p class="danger">Logout</p></div>
+    </section>    
+
+<section  class="fullpage">
+<header>
+    <nav class="intro">
+        <p class="profile">Game-information </p>
+    </nav>
+
+    <nav class="signups" style="display: none;">
+        <button class="material-icons theme" type="button" data-theme-toggle aria-label="change to light theme">
+        </button>
+    </nav>
+
+</header>
+
+<section class="assets">
+<h1>What is Random flag?</h1>
+<p>Welcome to all you need to know about random flag. Random flag is the #1 Trivia platform where users can answer questions on any topic of their choice from History to Movies,
+ Sports and so on, it also give users access to host their own questions. Gain points&#11088; and flags&#128681; on each correct answers and when lot of users interact on your questions.</p>
+<br>
+
+<h1>Guide</h1>
+<p>1. Every correct answer is +1 point&#11088;.</p>
+<p>2. Every quiz-session carries 10 questions.</p>
+<p>3. Points are not counted when you Leave a quiz-session before it ends.</p>
+<p>4. Some sections of these game will remain locked until you reach level Intermediate&#129353;.</p>
+<!-- <p>5. </p> -->
+<br>
+
+<h1>Game levels</h1>
+<p>Levels depends on the game flags&#128681;, each time a player earns a flag his level upgrades.
+You earn a flag&#128681;each time you accumulate a total of  20 points&#11088; from <a href="dashboard.html">answering</a> questions.
+</p>
+<h4>Levels Meter</h4>
+<p>Beginner&#128640;(0-19&#11088;, 0&#128681;)</p>
+<p>Intermediate&#129353;(20-39&#11088;, 1&#128681;)</p>
+<p>Advanced&#129352;(40-59&#11088;, 2&#128681;)</p>
+<p>Veteran&#129351;(60-79&#11088;, 3&#128681;)</p>
+<p>Professional&#127942;(80-99&#11088;, 4&#128681;)</p>
+<br>
+
+<!-- <h1>Faqs</h1>
+<br> -->
+<h1>Version</h1>
+<p class="">1.2</p>
+<br>
+
+<h1>Development year</h1>
+<p class="">Random Flag was developed in the year 2024.</p>
+<p></p>
+<br>
+
+</section>
+
+<footer>
+    <div class="rights">
+        <p class="copyright">&copy; 2024 Random <span class="flag">flag</span></p>
+        <p class="copyright">From Sub-Due Inc. <!--<span class="startup"><img src="IMG-20240526-WA0007-removebg-preview.png" class="orbit"></span>--></p>
+       </div><br><br>
+    
+    </div>
+    
+</footer>
+
+<section class="extraClass">
+    <section class="bottomNav">
+        <div class="color btmIcon" onclick="dashboard()"><i class="fa-solid fa-home"></i> <p>Home</p></div>
+        <div class="color btmIcon" onclick="profile()"><i class="fa-solid fa-user"></i> <p>Profile</p></div>
+        <div class="color btmIcon" onclick="leaderboard()"><i class="fa-solid fa-trophy"></i> <p>Leaderboard</p></div>
+        <div class="color btmIcon white" onclick="gameinfo()"><i class="fa-solid fa-gamepad"></i> <p>Gameinfo</p></div>
+    </section>
+</section>
+
+</section>
+</section>
+
+<section id="leave">
+<section class="logoutquest" id="leaveChild">
+    <div class="answer">
+        <h3 class="h3">Are you sure you want to Logout?</h3>
+        <div>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+        </div>
+    </div>
+</section>
+</section>
+
+</body>
+</html>

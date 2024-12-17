@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" id="bod" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zidio</title>
+        <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/459d688178.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style1.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+          
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+        <h1>I-o<span class="colored">3</span></h1>
+        </div>
+       
+        <!--  <nav class="nav">
+          <i class="fa-solid fa-times" id="close"></i>
+          <ul>
+            <li><a class="" href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+          </ul>
+          
+        </nav>
+        <i  class="fa-solid fa-bars" id="menu"></i> -->
+        <a href="/profile" class="user-profile">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </header>
+<section>
+   <div class="center">
+<div class="outpour">
+  <div class="mag">
+    <span class="up">
+      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+  </span>
+    <input type="file" id="image" class="upload" accept="image/*">
+    </div>
+</div>      
+   </div>
+
+<span class="second"><h1>My profile.</h1><a href="/dashboard" class="jam"><i class="fa-solid fa-arrow-left"></i></a>
+</span>
+
+<section class="account-container" id="net">
+
+
+<span class="hover" onclick="document.location='/dashboard'">
+<p class="pr">Current-location</p>
+<div class="p"><small>Go to dashboard</small></div>
+</span>
+
+<span class="hover" onclick="document.location='/history'">
+<p class="pr">History</p>
+<div class="p"><small>View your past locations</small></div>
+</span>
+
+<span class="hover" onclick="document.location='/notification'">
+<p class="pr">Notifications</p>
+<div class="p"><small>Your notifications</small></div>
+</span>
+
+<span class="hover" style="padding-top: 0px; padding-bottom: 8px;">
+<details>
+  <summary>
+<p style="color: #1b1b1b;" class="pr">Settings&blacktriangledown;</p>
+<div class="p"><small>Change settings</small></div>
+  </summary>
+  <p class="tog" onclick="dark()">Dark Mode</p>
+  <p class="tog" onclick="light()">Light Mode</p>
+  <p class="tog">Clear location history</p>
+</details>
+</span>
+
+<span class="hover">
+<p class="pr">Referals</p>
+<div class="p"><small>Refere a friend (coming soon)</small></div>
+</span>
+ 
+<form action="/logout" method="GET" accept-charset="utf-8">
+    <button class="btn btn-filled" type="submit" style="margin-left: 18px;">Logout</button>
+</form><br><br><br><br><br>
+</section>
+
+<section class="controls">
+  <a href="/dashboard" class="control" ><i class="fa-solid fa-earth-africa colored" style="color: #1b1b1b;"></i></a>
+  <a href="/history" class="control"><i class="fa-solid fa-map-location-dot"></i></a>
+  <a href="/notification" class="control"><i class="fa-solid fa-bell"></i></a>
+</section>
+
+<script>
+
+   // console.log(tim)
+
+  function upload() {
+   const top = document.querySelector(".upload");
+   const image = top.files[0];
+
+   if (!image.type.includes("image")) {
+    return alert('Only images are allowed!');
+   }
+
+   if (image.size > 10_000_000) {
+    return alert('Maximum upload is 10mb!');
+   }
+
+   const fileReader = new FileReader();
+   fileReader.readAsDataURL(image);
+
+ //  const name = document.getElementById("image").files[0].name
+
+  // fileReader.addEventListener('load',function(){
+  //   if(this.result && localStorage) {
+  //     window.localStorage.setItem(name, this.result)
+  //     alert("Image updated")
+  //   } else {
+  //     alert("Image not updated")
+  //   }
+  // }) 
+
+  // fileReader.readAsDataURL(document.getElementById('image').files[0])
+
+   fileReader.onload = (fileReaderEvent) => {
+    const profile = document.querySelector('.mag');
+    const tim = profile.style.backgroundImage = `url(${fileReaderEvent.target.result})`;
+ //  window.localStorage.setItem(name, tim)
+  //   const pot = window.localStorage.getItem(window.localStorage)
+   }
+  }
+
+  function show(){
+    for (let i = 0; i < window.localStorage.length; i++) {
+      const res =window.localStorage.getItem(window.localStorage.key[i])
+      const image = new image()
+      image.src = res;
+    }
+  }
+
+  function dark(){
+  document.getElementById('bod').style.backgroundColor='#1b1b1b';
+  let full = document.getElementById('net');
+  full.style.backgroundColor='#1b1b1b';
+  // full.addEventListener('click', jim);
+  
+   let head = document.getElementsByClassName('second');
+  for (let i = 0; i < head.length; i++) {
+    head[i].style.color="white";
+  }
+
+  let rop = document.getElementsByTagName('p');
+  for (let i = 0; i < rop.length; i++) {
+    rop[i].style.color="white";
+  }
+
+  let btn = document.getElementsByTagName('button');
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].style.backgroundColor = "white"
+    btn[i].style.color = "#1b1b1b"
+  }
+}  
+
+  addEventListener('click', light());
+
+function light(event){
+  document.getElementById('bod').style.backgroundColor='white';
+  let full = document.getElementById('net');
+  full.style.backgroundColor='white';
+  // full.addEventListener('click', jim);
+  
+   let head = document.getElementsByClassName('second');
+  for (let i = 0; i < head.length; i++) {
+    head[i].style.color="#1b1b1b";
+  }
+
+  let rop = document.getElementsByTagName('p');
+  for (let i = 0; i < rop.length; i++) {
+    rop[i].style.color="#1b1b1b";
+  }
+
+  let btn = document.getElementsByTagName('button');
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].style.backgroundColor = "#1b1b1b"
+    btn[i].style.color = "white"
+  }
+}
+
+</script>
